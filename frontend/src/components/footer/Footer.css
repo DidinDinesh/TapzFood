@@ -39,6 +39,10 @@
     color: white;
 }
 
+.footer-content-left img {
+    width: 170px;
+}
+
 .footer-social-icons img {
     width: 40px;
     margin-right: 15px;

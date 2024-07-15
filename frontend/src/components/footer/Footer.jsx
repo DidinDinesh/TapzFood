@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
      <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
+            <img src={assets.tapzfood} alt="" />
             <p>The term dummy tag can have different 
                 meanings depending on the context. 
                 Here are two possibilities related to 
