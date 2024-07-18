@@ -1,5 +1,5 @@
 import userModel from '../models/userModel.js'
-import jwt, { sign } from 'jsonwebtoken'
+import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import validator from 'validator'
 import isEmail from "validator/lib/isEmail.js"
@@ -10,7 +10,7 @@ const loginUser = async (req, res) => {
 
 }
 
-const createToken = async (req, res) => {
+const createToken = (id) => {
     return jwt.sign({id},process.env.JWT_SECRET)
 }
 
@@ -55,7 +55,7 @@ const registerUser = async (req, res) => {
         res.json({success:true,token})
 
     } catch (error) {
-        console.log(error)
+        console.log(error);
         res.json({success:false, message:"Error"})
     }
 }
