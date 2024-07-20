@@ -18,4 +18,4 @@ export const assets ={
     myImg
 }
 
-export const url = 'http://localhost:4000'
+export const url = 'https://tapzfood-backend.onrender.com'
